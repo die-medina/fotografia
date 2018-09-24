@@ -1,0 +1,94 @@
+body {
+  margin-top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/DSCF4427.jpg");
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s; }
+
+.b-a, .bar, .bar:before, .bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: white; }
+
+.menu-collapsed {
+  transition: all .25s;
+  position: fixed;
+  height: 40px;
+  top: 23px;
+  width: 350px;
+  z-index: 1;
+  cursor: pointer; }
+  .menu-collapsed ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px; }
+
+.bar {
+  position: fixed;
+  left: 32px;
+  top: 40px; }
+  .bar:before {
+    top: -8px; }
+  .bar:after {
+    top: 8px;
+    display: inline-block; }
+
+.b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
+  transition: all .25s;
+  top: -0px; }
+
+.menu-expanded {
+  transition: all .25s;
+  border-radius: 0px;
+  height: 40px;
+  top: 23px;
+  width: 350px; }
+  .menu-expanded ul {
+    transition: all 0s;
+    position: relative;
+    left: 76px;
+    top: 9px;
+    z-index: 2; }
+  .menu-expanded a {
+    transition: all .15s;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 5px;
+    color: #fff; }
+    .menu-expanded a:hover {
+      transition: all .15s;
+      letter-spacing: 1px;
+      color: #fff; }
+  .menu-expanded .bar {
+    background-color: transparent;
+    transition: all .25s; }
+    .menu-expanded .bar:before {
+      transform: rotate(45deg); }
+    .menu-expanded .bar:after {
+      transform: rotate(-45deg); }
+
+.logo {
+  position: absolute;
+  left: 79px;
+  top: 26px;
+  font-size: 30px;
+  color: white; }
+
+.menu {
+  font-size: 120px;
+  padding-top: 125px;
+  padding-left: 150px;
+  color: white;
+  cursor: pointer; }
+
+.roll:hover {
+  color: #66FFFF; }
+
+/*# sourceMappingURL=estilos.css.map */

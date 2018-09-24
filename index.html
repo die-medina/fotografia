@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/resets.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<header class="header">
+	  	<div class="col-12 menu-collapsed">
+	  		<div class="bar"></div>
+			<nav>
+				<ul>
+					<a href="www.google.com" target="blank">Trabajos</a>
+	  				<a href="">Info</a>
+	  				<a href="">Contacto</a>
+	  			</ul>
+	  		</nav>		
+		</div>
+
+			<div class="col-1">
+				<div class="logo">logo</div>
+			</div>
+	</header>
+	
+	<section class="menu">
+		<div class="col-12">
+			<span class="roll menu1">Portrait</span>
+		</div>
+		<div class="col-12">
+			<span class="roll menu2">Landscape</span>
+		</div>
+		<div class="col-12">
+			<span class="roll menu3">Food</span>
+		</div>
+		<div class="col-12">
+			<span class="roll menu4">Street</span>
+	</section>
+
+<script>
+	$(".menu-collapsed").click(function(e){
+	    e.preventDefault();
+	    var $this = $(this).parent().find(".logo");
+	    $(".logo").not($this).hide();
+	    $this.toggle();   
+	});
+</script>
+
+<script>
+	$(".menu1").hover(function(){
+		$("body").css("background-image","url(img/DSCF4766.jpg)");
+    });
+	$(".menu2").hover(function(){
+		$("body").css("background-image","url(img/DSCF4420.jpg)");
+	});
+	$(".menu3").hover(function(){
+		$("body").css("background-image","url(img/DSCF4738.jpg)");
+	});
+	$(".menu4").hover(function(){
+		$("body").css("background-image","url(img/DSCF3479.jpg)");
+	});
+	$('*[class^="roll"]').mouseleave(function(){
+		$("body").css("background-image","url(img/DSCF4427.jpg)");
+	});
+</script>
+
+<script>
+	$(".menu-collapsed").click(function() {
+  	$(this).toggleClass("menu-expanded");
+	});
+</script>
+	
+</body>
+</html>

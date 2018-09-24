@@ -1,0 +1,119 @@
+body{
+	margin-top: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('../img/DSCF4427.jpg');
+	transition-timing-function: ease-in;
+	transition-duration: 0.3s;
+}
+
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   left: 0;
+   height: 3px;
+   width: 25px;
+   border-radius: 15px;
+   background-color: white;
+}
+
+.menu-collapsed {
+   transition: all .25s;
+   position: fixed;
+	height: 40px;
+	top: 23px;
+	width: 350px;
+   z-index: 1;
+   cursor: pointer;
+   ul {
+      transition: all 0s;
+      position: fixed;
+      left: -9000px;
+   }
+}
+
+.bar {
+   @extend .b-a;
+   position: fixed;
+   left: 32px;
+   top: 40px;
+   &:before {
+      @extend .b-a;
+      top: -8px;
+   }
+   &:after {
+      @extend .b-a;
+      top: 8px;
+      display: inline-block;
+   }
+}
+
+.b-a-expanded {
+   transition: all .25s;
+   top: -0px;
+}
+
+.menu-expanded {
+	transition: all .25s;
+	border-radius: 0px;
+	height: 40px;
+	top: 23px;
+	width: 350px;
+
+   ul {
+      transition: all 0s;
+      position: relative;
+      left: 76px;
+      top: 9px;
+      z-index: 2;
+   }
+   a {
+      transition: all .15s;
+      text-decoration: none;
+      font-size: 21px;
+      padding: 5px;
+      color: #fff;
+      &:hover {
+         transition: all .15s;
+         letter-spacing: 1px;
+         color: #fff;
+      }
+   }
+
+   .bar {
+      background-color: transparent;
+      transition: all .25s;
+      &:before {
+         @extend .b-a-expanded;
+         transform: rotate(45deg);
+      }
+      &:after {
+         @extend .b-a-expanded;
+         transform: rotate(-45deg);
+      }
+   }
+}
+
+.logo{
+	position: absolute;
+	left: 79px;
+   	top: 26px;
+	font-size: 30px;
+	color: white;
+}
+
+.menu {
+	font-size: 120px;
+	padding-top: 125px;
+	padding-left: 150px;
+	color: white;
+	cursor: pointer;
+}
+
+.roll{
+	&:hover{
+		color: #66FFFF;
+	}
+}
