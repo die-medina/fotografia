@@ -21,7 +21,6 @@ body{
 	background-image: url('../img/DSCF4427.jpg');
 	transition-timing-function: ease-in;
 	transition-duration: 0.3s;
-   background-size: cover;
 }
 
 .b-a {
@@ -113,7 +112,7 @@ body{
 
 .logo{
 	position: absolute;
-	left: 79px;
+	left: 70px;
    top: 18px;
    height: 43px;
 }
@@ -133,4 +132,16 @@ body{
 	&:hover{
 		color: #66FFFF;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+   body{
+   width: 100%;
+   background-position: center;
+   }
+   .menu{
+   font-size: 100px;
+   padding-top: 120px;
+   padding-left: 25px;
+}
 }

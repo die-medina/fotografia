@@ -17,8 +17,7 @@ body {
   background-attachment: fixed;
   background-image: url("../img/DSCF4427.jpg");
   transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-  background-size: cover; }
+  transition-duration: 0.3s; }
 
 .b-a, .bar, .bar:before, .bar:after {
   transition: all .25s;
@@ -90,7 +89,7 @@ body {
 
 .logo {
   position: absolute;
-  left: 79px;
+  left: 70px;
   top: 18px;
   height: 43px; }
 
@@ -107,5 +106,15 @@ body {
   color: white; }
   .roll:hover {
     color: #66FFFF; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    background-position: center; }
+
+  .menu {
+    font-size: 100px;
+    padding-top: 120px;
+    padding-left: 25px; } }
 
 /*# sourceMappingURL=estilos.css.map */
