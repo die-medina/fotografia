@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'catamaran';
+  src: url("fonts/Catamaran-Bold.ttf");
+  src: url("fonts/Catamaran-ExtraBold.ttf");
+  src: url("fonts/Catamaran-ExtraLight.ttf");
+  src: url("fonts/Catamaran-Regular.ttf");
+  src: url("fonts/Catamaran-Thin.ttf"); }
+@font-face {
+  font-family: 'raleway';
+  src: url("Raleway-Regular.ttf");
+  src: url("Raleway-Medium.ttf");
+  src: url("Raleway-Bold.ttf"); }
 body {
   margin-top: 0;
   background-size: cover;
@@ -60,6 +72,7 @@ body {
   .menu-expanded a {
     transition: all .15s;
     text-decoration: none;
+    font-family: 'raleway';
     font-size: 21px;
     padding: 5px;
     color: #fff; }
@@ -78,18 +91,21 @@ body {
 .logo {
   position: absolute;
   left: 79px;
-  top: 26px;
-  font-size: 30px;
-  color: white; }
+  top: 18px;
+  height: 43px; }
 
 .menu {
   font-size: 120px;
   padding-top: 125px;
   padding-left: 150px;
-  color: white;
   cursor: pointer; }
 
-.roll:hover {
-  color: #66FFFF; }
+.roll {
+  font-family: 'catamaran';
+  font-weight: lighter;
+  text-decoration: none;
+  color: white; }
+  .roll:hover {
+    color: #66FFFF; }
 
 /*# sourceMappingURL=estilos.css.map */

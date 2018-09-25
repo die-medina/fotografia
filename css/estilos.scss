@@ -1,3 +1,18 @@
+@font-face {
+   font-family: 'catamaran';
+   src: url('fonts/Catamaran-Bold.ttf');
+   src: url('fonts/Catamaran-ExtraBold.ttf');
+   src: url('fonts/Catamaran-ExtraLight.ttf');
+   src: url('fonts/Catamaran-Regular.ttf');
+   src: url('fonts/Catamaran-Thin.ttf');
+}
+@font-face {
+   font-family: 'raleway';
+   src: url('Raleway-Regular.ttf');
+   src: url('Raleway-Medium.ttf');
+   src: url('Raleway-Bold.ttf');
+}
+
 body{
 	margin-top: 0;
 	background-size: cover;
@@ -6,7 +21,7 @@ body{
 	background-image: url('../img/DSCF4427.jpg');
 	transition-timing-function: ease-in;
 	transition-duration: 0.3s;
-   background-size:cover;
+   background-size: cover;
 }
 
 .b-a {
@@ -62,7 +77,6 @@ body{
 	height: 40px;
 	top: 23px;
 	width: 350px;
-
    ul {
       transition: all 0s;
       position: relative;
@@ -73,6 +87,7 @@ body{
    a {
       transition: all .15s;
       text-decoration: none;
+      font-family:'raleway';
       font-size: 21px;
       padding: 5px;
       color: #fff;
@@ -82,7 +97,6 @@ body{
          color: #fff;
       }
    }
-
    .bar {
       background-color: transparent;
       transition: all .25s;
@@ -100,20 +114,22 @@ body{
 .logo{
 	position: absolute;
 	left: 79px;
-   	top: 26px;
-	font-size: 30px;
-	color: white;
+   top: 18px;
+   height: 43px;
 }
 
-.menu {
+.menu{
 	font-size: 120px;
 	padding-top: 125px;
 	padding-left: 150px;
-	color: white;
 	cursor: pointer;
 }
 
 .roll{
+   font-family:'catamaran';
+   font-weight: lighter;
+   text-decoration: none;
+   color: white;
 	&:hover{
 		color: #66FFFF;
 	}
