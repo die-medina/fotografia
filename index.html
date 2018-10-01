@@ -20,7 +20,7 @@
 <body>
 
 	<header class="header">
-	  	<div class="col-12 menu-collapsed">
+	  	<div class="col-12 menu-collapsed" id="dlDropDown">
 	  		<div class="bar"></div>
 			<nav>
 				<ul>
@@ -82,6 +82,10 @@
 	$(".menu-collapsed").click(function() {
   	$(this).toggleClass("menu-expanded");
 	});
+
+	$("a.bar").click(function() {
+   $("#dlDropDown").dropdown("toggle");
+});
 </script>
 	
 </body>
