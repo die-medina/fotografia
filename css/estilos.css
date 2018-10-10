@@ -79,15 +79,15 @@ nav ul {
   .roll:hover {
     color: #66FFFF; }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
   body {
     width: 100vw;
     background-position: center; }
 
   .menu {
-    font-size: 50px;
-    padding-top: 377px;
-    padding-left: 97px;
+    font-size: 68px;
+    padding-top: 249px;
+    padding-left: 70px;
     z-index: -1;
     position: absolute; }
 
@@ -105,15 +105,41 @@ nav ul {
     margin-top: 0px;
     margin-left: 35px;
     padding-top: 22px; } }
-@media only screen and (max-width: 414px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100vw;
+    background-position: center; }
+
+  .menu {
+    font-size: 68px;
+    padding-top: 300px;
+    padding-left: 70px;
+    z-index: -1;
+    position: absolute; }
+
+  .menu-toggle {
+    top: 21px;
+    left: 23px;
+    z-index: 1; }
+
+  .logo {
+    left: 65px;
+    top: 12px;
+    display: block; }
+
+  nav ul {
+    margin-top: 0px;
+    margin-left: 35px;
+    padding-top: 22px; } }
+@media (min-width: 320px) and (max-width: 414px) {
   body {
     width: 100vw;
     background-position: center; }
 
   .menu {
     font-size: 53px;
-    padding-top: 249px;
-    padding-left: 34px;
+    padding-top: 202px;
+    padding-left: 8px;
     z-index: -1;
     position: absolute; }
 
